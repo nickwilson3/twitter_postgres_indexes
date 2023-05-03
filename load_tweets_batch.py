@@ -8,7 +8,10 @@ import datetime
 import zipfile
 import io
 import json
+import warnings
+from cryptography.utils import CryptographyDeprecationWarning
 
+warnings.filterwarnings("ignore", category=CryptographyDeprecationWarning)
 ################################################################################
 # helper functions
 ################################################################################
